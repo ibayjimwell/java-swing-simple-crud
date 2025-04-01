@@ -590,7 +590,7 @@ public class Form extends javax.swing.JFrame {
         if (TextFieldEmailAddress.getText().trim().isEmpty()) {
             ValidationMessage("Email Address is required.", LabelEmailAddress);
             isFormValid = false;
-        } else if (!TextFieldEmailAddress.getText().matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+$")) {
+        } else if (!TextFieldEmailAddress.getText().matches("^[A-Za-z0-9+_.-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$")) {
             ValidationMessage("Email Address is invalid.", LabelEmailAddress);
         } else {
            ValidationMessage("Email Address", LabelEmailAddress, true);

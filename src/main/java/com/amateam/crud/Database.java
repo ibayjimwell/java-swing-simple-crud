@@ -35,13 +35,13 @@ public class Database {
             
             // Connection info that's need of the postgresql
             // host:                                   port database 
-            String host = System.getenv("DB_HOST");
+            String host = System.getenv("DB_HOST_CRUD");
             
             // Database username
-            String user = System.getenv("DB_USER");
+            String user = System.getenv("DB_USER_CRUD");
             
             // Database password
-            String password = System.getenv("DB_PASSWORD");           
+            String password = System.getenv("DB_PASSWORD_CRUD");           
             
             // Connect to the database
             con = DriverManager.getConnection(host, user, password);
